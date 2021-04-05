@@ -1,5 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import json from "./covid_data.json";
+
+for (const key in json) {
+  if (Object.hasOwnProperty.call(json, key)) {
+    const element = json[key];
+    console.log(element);
+  }
+}
 
 function App() {
   return (
